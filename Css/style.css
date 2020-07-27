@@ -1,0 +1,541 @@
+/*
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Din Next Arabic', sans-serif;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4b74ff;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: #4b74ff;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}*/
+
+
+@font-face {
+    font-family: ExpoArabicBook;
+    src: url(../fonts/ExpoArabicBook.ttf);
+}
+
+@font-face {
+    font-family: ExpoArabicLight;
+    src: url(../fonts/ExpoArabicLight.ttf);
+}
+
+@font-face {
+    font-family: ExpoArabicSemiBold;
+    src: url(../fonts/ExpoArabicSemiBold.ttf);
+}
+
+@font-face {
+    font-family: ExpoArabicMedium;
+    src: url(../fonts/ExpoArabicMedium.ttf);
+}
+
+@font-face {
+    font-family: ExpoArabicBold;
+    src: url(../fonts/ExpoArabicBold.otf);
+}
+
+@font-face {
+    font-family: NotoKufiArabic;
+    src: url(../fonts/NotoKufiArabic-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoKufiArabicBold;
+    src: url(../fonts/NotoKufiArabic-Bold.ttf);
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #004E9F;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: #004E9F;
+}
+
+
+/* header*/
+.navbar {
+    padding: 0.9rem 1rem;
+}
+
+a.nav-link {
+    color: #004E9F !important;
+    text-align: center;
+    font-family: ExpoArabicMedium;
+}
+
+
+
+li.nav-item {
+    margin: 0 5px;
+}
+
+
+/* End Header*/
+
+/* Hero-section*/
+.hero-section {
+    background: #F9F9F9;
+    padding-top: 70px;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.hero-text img {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.hero-text p {
+    text-align: right;
+    font-size: 16px;
+    color: #989898;
+    font-family: ExpoArabicBook;
+}
+
+.hero-text ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.hero-text ul li a img {
+    margin: 0;
+}
+
+.hero-text ul li a {
+    padding: 8px 20px;
+    display: block;
+    border: 2px solid #004E9F;
+    border-radius: 32px;
+}
+
+.bg-appstore {
+    background: #004E9F;
+    padding: 8px 30px !important;
+}
+
+.hero-text ul {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* End Hero-section*/
+
+
+/* About-section */
+
+.about-seection {
+    padding: 94px 0;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-text {
+    text-align: right;
+}
+
+.about-text ul li h3 {
+    font-size: 24px;
+    color: #1D3239;
+    margin-bottom: 17px;
+    padding-right: 16px;
+    font-family: ExpoArabicSemiBold;
+}
+
+.about-text ul li p {
+    color: #989898;
+    font-size: 16px;
+    font-family: NotoKufiArabic;
+}
+
+.about-text ul li {
+    margin-bottom: 31px;
+    position: relative;
+}
+
+.about-text ul li:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #004E9F;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 16px;
+    right: 0;
+}
+
+/* End About-section */
+
+/* Download-section */
+.download-section {
+    padding: 114px 0;
+    background: linear-gradient(116deg, #004E9F, #2E90F6, #2E90F6);
+    position: relative;
+    margin-top: 140px;
+}
+
+
+
+.download-text ul li {
+    display: inline-block;
+    margin: 5px 10px;
+
+}
+
+.download-text ul li a img {
+    margin: 0;
+}
+
+.download-text ul li a {
+    padding: 8px 20px;
+    display: block;
+    border: 2px solid #000;
+    background: #000;
+    border-radius: 32px;
+}
+
+.download-text ul {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.list-one {
+    margin-top: 0px !important;
+}
+
+.list-one li {
+    position: relative;
+}
+
+.list-one li:after {}
+
+.download-img img {
+    margin: 0 auto;
+    display: block;
+    top: -275px;
+    position: absolute;
+}
+
+.download-img {
+    animation: phoneMove 3s ease-in-out infinite;
+    -webkit-animation: phoneMove 3s ease-in-out infinite;
+    -moz-animation: phoneMove 3s ease-in-out infinite;
+    -o-animation: phoneMove 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes phoneMove {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(20px)
+    }
+}
+
+.download-text ul li h4 {
+    font-size: 24px;
+    padding-right: 29px;
+    color: #fff;
+    margin-bottom: 23px;
+    display: inline;
+    position: relative;
+    font-family: ExpoArabicSemiBold;
+}
+
+.download-text ul li h4::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #1D3239;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 10px;
+    right: 0;
+}
+
+.download-text ul li p {
+    color: #fff;
+    font-size: 16px;
+    font-family: ExpoArabicSemiBook;
+}
+
+
+
+.app-download a {
+    padding: 8px 30px !important;
+}
+
+/* End Download-section*/
+
+
+/* features-section */
+.features-section {
+    padding-top: 180px;
+    padding-bottom: 70px;
+}
+
+.features-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.features-title h2 {
+    font-size: 24px;
+    color: #1D3239;
+    position: relative;
+    font-family: ExpoArabicSemiBold;
+}
+
+.features-title h2:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #004E9F;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 50px;
+    right: 50%;
+}
+
+.features-item img {
+    margin-bottom: 14px;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-item h4 {
+    font-size: 16px;
+    color: #004E9F;
+    margin-bottom: 16px;
+    font-family: NotoKufiArabicBold;
+}
+
+.features-item p {
+    font-size: 14px;
+    color: #2A2A2A;
+    font-family: NotoKufiArabic;
+    /*    width: 340px;*/
+    /*    margin: 0 auto;*/
+}
+
+.lr-border {
+    border-left: 0.5px solid #707070;
+    border-right: 0.5px solid #707070;
+}
+
+
+/* End features-section */
+
+
+/* Footer*/
+
+/* top-Footer */
+.top-footer {
+    background-image: url(../images/bg-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+}
+
+.logo-footer {
+    text-align: right;
+}
+
+.logo-footer ul {
+    margin-top: 32px;
+}
+
+.logo-footer ul li img {}
+
+.logo-footer ul li p {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-family: NotoKufiArabic;
+}
+
+.logo-footer ul li {
+    margin-bottom: 14px;
+}
+
+.menu-footer {
+    text-align: right;
+}
+
+.menu-footer ul li {
+    margin-bottom: 29px;
+}
+
+.menu-footer ul li a {
+    color: #fff;
+    font-family: ExpoArabicBook;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #004E9F;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+/* End top-footer*/
+
+/* bottom-footer */
+.bottom-footer {
+    padding: 18px 0;
+    background: #004E9F;
+}
+
+.bottom-footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: NotoKufiArabi;
+}
+
+/* End bottom-footer */
+
+/* End Footer*/
+@media (max-width: 769px) {
+    .download-img img {
+        margin: 0 auto;
+        display: block;
+        /* top: -275px; */
+        position: inherit;
+        width: 100%;
+    }
+
+    .download-section {
+        margin-top: 0;
+    }
+
+    .features-section {
+        padding-top: 70px !important;
+    }
+}
+
+@media (max-width: 669px) {
+    .menu-footer {
+        text-align: center;
+    }
+
+    .lr-border {
+        border: none;
+    }
+
+    .download-text ul {
+        text-align: center;
+    }
+
+    .hero-text ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .download-section .container {
+        max-width: 1280px;
+    }
+
+    .about-seection .container {
+        max-width: 1280px;
+    }
+
+    .hero-section .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 991px) {
+    header.scroll {
+        background-color: rgb(149 149 149 / 22%);
+        transition: all .5s ease;
+    }
+}
+
+@media (max-width: 991px) {
+    header.scrollsm {
+        background: #ebebeb;
+        transition: all .5s ease;
+    }
+}
